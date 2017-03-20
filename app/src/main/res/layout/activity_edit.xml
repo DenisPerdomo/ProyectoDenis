@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.denis.proyectodenis.editActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="Status"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DONE" />
+
+                <RadioButton
+                    android:id="@+id/radioNotDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="NOT DONE" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="Priority"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LOW" />
+
+                <RadioButton
+                    android:id="@+id/radioMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="MEDIUM" />
+
+                <RadioButton
+                    android:id="@+id/radioHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="HIGH" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtTimeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="Time and Date"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/dateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:onClick="agregar"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="back"
+                android:text="Cancel" />
+
+        </TableRow>
+
+    </LinearLayout>
+</RelativeLayout>
