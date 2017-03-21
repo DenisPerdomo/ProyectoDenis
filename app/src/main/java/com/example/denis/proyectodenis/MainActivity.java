@@ -111,26 +111,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-    private static void setFecha(int year, int monthOfYear, int dayOfMonth) {
-        // Increment monthOfYear for Calendar/Date -> Time Format setting
-        monthOfYear++;
-        String mon = "" + monthOfYear;
-        String day = "" + dayOfMonth;
-        if (monthOfYear < 10)
-            mon = "0" + monthOfYear;
-        if (dayOfMonth < 10)
-            day = "0" + dayOfMonth;
-        fecha = day + "/" + mon + "/" + year;
-    }
-
-    private static void setHora(int hourOfDay, int minute, int mili) {
-        String hour = "" + hourOfDay;
-        String min = "" + minute;
-        if (hourOfDay < 10)
-            hour = "0" + hourOfDay;
-        if (minute < 10)
-            min = "0" + minute;
-        hora = hour + ":" + min;
-    }
 }
